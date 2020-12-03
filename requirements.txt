@@ -4,4 +4,4 @@ gunicorn
 numpy
 pandas 
 sklearn
-nltk==3.4.5
+
