@@ -25,7 +25,7 @@ Check out the project at https://hate-speech-detectionn.herokuapp.com/
 
 ## Approach
 
-The Jupyter notebook contains three methods that can be used for classification - 
+The Jupyter [notebook](https://github.com/hot9cups/Hate-Speech-Detection/blob/main/hate_speech_detection.ipynb) contains three methods that can be used for classification - 
 - Count-vectoriser(Naive approach)
 - TF-IDF features(Improvement)
 - RNN(Best performance)
@@ -41,7 +41,7 @@ This isn't ideal for such a task, and shall be changed to use RNNs like is done 
 2) cd to the root of cloned repo and Run app.py<br>
 ``` python app.py```
 
-3) Visit localhost:8000 (You can also directly visit <a href='https://hate-speech-detectionn.herokuapp.com/'>this link</a>) to see your application running. Here is the screenshot of the app running : <br>
+3) Visit localhost:8000 (You can alternatively directly visit [this](https://hate-speech-detectionn.herokuapp.com/) link) to see the application running. Here is the screenshot of the app in action : <br>
 <img src="https://github.com/shubham5351/Hate-Speech-Detection/blob/main/Screenshots/1.JPG" width=1000 height=600></img>
 
 4) Enter the text which you want to classify : <br>
