@@ -2,6 +2,7 @@
 
 - [Problem Statement](#problem-statement)
 - [Libraries Used](#libraries-used)
+- [Approach](#approach)
 - [Setup](#setup)
 - [Contributors](#contributors)
 
@@ -10,8 +11,9 @@
 
 ## Problem Statement
 
-Problem Statement - 
-Hate Speech are a words, actions which is prohibited because it leads to acts that trigger violence attitude towards other individuals or groups. So in this project we are detecting such hate speech words and try to find it and prohibit such words from being lead to violence. We have also deployed the model Using Flask.
+Hate Speech are a set of prohibited words/actions because they can that trigger violent attitude/acts towards other individuals or groups. So in this project we detect whether a given sentence involves hate speech. We have also deployed the model Using Flask on Heroku.<br>
+
+Check out the project at https://hate-speech-detectionn.herokuapp.com/
 
 ## Libraries Used
 
@@ -21,21 +23,31 @@ Hate Speech are a words, actions which is prohibited because it leads to acts th
 - sklearn 
 - Flask
 
+## Approach
+
+The Jupyter notebook contains three methods that can be used for classification - 
+- Count-vectoriser(Naive approach)
+- TF-IDF features(Improvement)
+- RNN(Best performance)
+
+In the deployed app, the model uses ridge classification(essentially ridge regression but using a threshold to turn it into a classifier) which is a simple linear model.<br>
+This isn't ideal for such a task, and shall be changed to use RNNs like is done in the notebook.
+
 ## Setup
 
-1) clone the repository to your localmachine<br>
-``` git clone https://github.com/shubham5351/Hate-Speech-Detection.git ```
+1) Clone the repository to your local machine<br>
+``` git clone https://github.com/hot9cups/Hate-Speech-Detection.git ```
 
-2) go to the proper directory of cloned repo and Run app.py<br>
+2) cd to the root of cloned repo and Run app.py<br>
 ``` python app.py```
 
-3) Visit the localhost:8000 or the link provided to see your application running.This is the screen after running successfully.<br>
+3) Visit localhost:8000 (You can also directly visit <a href='https://hate-speech-detectionn.herokuapp.com/'>this link</a>) to see your application running. Here is the screenshot of the app running : <br>
 <img src="https://github.com/shubham5351/Hate-Speech-Detection/blob/main/Screenshots/1.JPG" width=1000 height=600></img>
 
-4) Please Enter the Review for which you want to detect whether it is hatespeech review.<br>
+4) Enter the text which you want to classify : <br>
 <img src="https://github.com/shubham5351/Hate-Speech-Detection/blob/main/Screenshots/2.JPG" width=1000 height=600></img>
 
-5) After Entering the Review It will predict whether the Review was Hatespeech or Not.<br>
+5) Classification of the review : <br>
 <img src="https://github.com/shubham5351/Hate-Speech-Detection/blob/main/Screenshots/3.JPG" width=1000 height=600></img>
 
 ## Contributors
