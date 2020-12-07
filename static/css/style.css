@@ -1,0 +1,49 @@
+body {
+	overflow-x: hidden;
+}
+header {
+	text-align: center;
+}
+nav {
+	position: fixed;
+}
+
+
+footer {
+	background-color: #A9A9A9;
+	bottom: 0;
+	position: fixed;
+	width: 100%;
+	text-align: center;
+	font-family: "Lucida Console", Courier, monospace;
+}
+
+footer h4 {
+	font-weight: bolder;
+}
+
+#title {
+	background-color: white;
+}
+
+#title a {
+	text-decoration: none;
+	text-align: center;
+	font-family: "Times New Roman", Times, serif;
+	font-weight: bolder;
+}
+
+#infoform form {
+	text-align: center;
+}
+
+#in textarea {
+	font-size: 20px;
+	border: .3rem solid #2b4053;
+	position: relative;
+	margin: auto;
+}
+
+div .container {
+    text-align:center;
+}
